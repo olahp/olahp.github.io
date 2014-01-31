@@ -17,6 +17,9 @@ h1 {
 	margin-bottom: 10px;
 	font-size: 30px;
 }
+h2 {
+	margin-top: 10px;
+}
 
 a {
 	text-decoration: none;
@@ -89,9 +92,25 @@ section {
 
 
 /* Section 2 */
-
+#section2 {
+	background-image: url('../img/back2.jpg');
+	background-repeat: repeat;
+	padding-top: 0;
+}
 .project {
-	border: 1px solid #000;
+	color: #999999;
+	margin-bottom: 20px;
+}
+	.project .img-thumbnail {
+		background: none;
+		padding: 0;
+		-webkit-box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    1px 1px 8px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         1px 1px 8px 0px rgba(50, 50, 50, 0.75);
+	}
+
+.center {
+	text-align: center;
 }
 
 /* Media-time, baby */
