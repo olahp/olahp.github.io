@@ -13,6 +13,24 @@ body {
 	width: 100%;
 }
 
+h1 {
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+a:hover {
+	text-decoration: underline;
+	color: #4f4f4f;
+}
+
+p {
+	margin: 0;
+}
+
 nav {
 	position: fixed;
 	z-index: 1;
@@ -24,20 +42,26 @@ nav {
 }
 	nav ul {
 		list-style-type: none;
+		margin: 0;
 	}
 		nav ul li {
 			padding: 5px 10px 5px 10px;
 			font-size: 20px;
 		}
+			nav ul li a:hover {
+				text-decoration: none;
+			}
 
 section {
 	margin: 0 auto;
 	min-height: 100%;
-	width: 100%;
 	padding: 2em 0;
 	overflow: hidden;
 	border-bottom: 1px solid #000;
+	position: relative;
 }
+
+/* Section 1 */
 
 #section1 {
 	background-image: url('../img/back.jpg');
@@ -46,21 +70,14 @@ section {
     background-attachment: fixed;
 }
 #section1 .section-content {
-	position: absolute;
 	background-color: rgba(140, 123, 123, 0.1);
 	text-align: center;
-	top: 100px;
-	width: 100%;
 	padding: 10px 0;
+	margin-top: 100px;
 }
-
-h1 {
-	margin-bottom: 10px;
-}
-
-a {
-	text-decoration: none;
-	color: #4f4f4f;
+.work {
+	margin-bottom: 5px;
+	font-weight: 700;
 }
 
 .contact {
@@ -70,9 +87,32 @@ a {
 		font-weight: 700;
 	}
 
+
+/* Section 2 */
+
+.project {
+	border: 1px solid #000;
+}
+
 /* Media-time, baby */
 @media screen and (max-width:768px) {
 	nav {
-		top: 20px;
+		top: 0;
+		width: 100%;
+	}
+		nav ul li {
+			float: left;
+			padding: 5px 10px 5px 10px;
+			font-size: 20px;
+		}
+
+	section{
+		padding: 0;
+	}
+
+	#section1 .section-content {
+		background-color: rgba(140, 123, 123, 0.1);
+		margin-top: 45px;
+		padding-top: 5px;
 	}
 }
