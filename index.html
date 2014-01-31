@@ -1,7 +1,42 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <link href="css/app.css" rel="stylesheet" type="text/css">
+	</head>
+
 	<body>
-		<h1>Olahp</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		<nav>
+			<ul>
+				<li><a data-scroll data-speed="1000" data-easing="easeInOutCubic" href="#section1">Me</a></li>
+				<li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#section2">Projects</a></li>
+			</ul>
+		</nav>
+
+		<section id="section1" data-type="background" data-speed="10">
+			<div class="section-content">
+				<h1>Ola Helland-Pedersen</h1>
+				<p>System developer</p>
+				<p>Wannabe webdesigner</p>
+				<p>Allround PHP-dude</p>
+				<p>Javascript-fan</p>
+				<div class="contact">
+					<a href="mailto:olatrommis@gmail.com">olatrommis@gmail.com</a> |
+					<a href="https://github.com/olahp">Github</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="section2" data-type="background" data-speed="10">
+		</section>
+
+        <script src="js/app.js"></script>
+		<script src="js/smooth-scroll.js"></script>
 	</body>
 </html>
