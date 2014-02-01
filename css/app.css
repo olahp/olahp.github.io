@@ -104,9 +104,14 @@ section {
 	.project .img-thumbnail {
 		background: none;
 		padding: 0;
-		-webkit-box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.75);
-		-moz-box-shadow:    1px 1px 8px 0px rgba(50, 50, 50, 0.75);
-		box-shadow:         1px 1px 8px 0px rgba(50, 50, 50, 0.75);
+	}
+	.project .img-thumbnail:hover {
+		transform: 			translate( 0px, 1px );
+		-ms-transform: 		translate( 0px, 1px );
+		-webkit-transform: 	translate( 0px, 1px );
+		-webkit-box-shadow: 1px 1px 8px 0px rgba( 50, 50, 50, 0.75 );
+		-moz-box-shadow:    1px 1px 8px 0px rgba( 50, 50, 50, 0.75 );
+		box-shadow:         1px 1px 8px 0px rgba( 50, 50, 50, 0.75 );
 	}
 
 .center {
